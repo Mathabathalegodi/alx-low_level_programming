@@ -6,8 +6,8 @@ char *create_matter(char *file);
 void close_file(int rgt);
 
 /**
- * create_buffer - Allocates 1024 bytes for matter!
- * @file:  name of the file matter is storing chars for!
+ * create_matter - Allocates 1024 bytes for a matter!
+ * @file: name of the file matter is storing chars for!
  *
  * Return: A pointer to newly-allocated matter!
  */
@@ -29,7 +29,7 @@ char *create_matter(char *file)
 
 /**
  * close_file - it will close the file descriptors!
- * @fd: it is file descriptor to be closed!
+ * @rgt: it is file descriptor to be closed!
  */
 void close_file(int rgt)
 {
@@ -39,7 +39,7 @@ void close_file(int rgt)
 
 	if (wr == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", rgt);
+		dprintf(STDERR_FILENO, "Error: Can't close rgt %d\n", rgt);
 		exit(100);
 	}
 }

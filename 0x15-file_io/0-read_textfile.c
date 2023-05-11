@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * Read_textfile - It will write text file print to STDOUT!
- * @filename : Text file that is written!
- * @letters : Number of letters that is to be written!
- * Return: HR -The  actual number of bytes written and printed out!
+ * Read_textfile - it reads the text file print to STDOUT!
+ * @filename : Text file that is been read!
+ * @letters :the number of letters that is to be read!
+ * Return: HR -The actual number of bytes read and printed out!
  *        0 When ever the function fails or filename is NULL!
  */
 ssize_t read_textfile(const char *filename, size_t letters)

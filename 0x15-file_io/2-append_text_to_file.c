@@ -7,10 +7,9 @@
  *
  * Return : incase of a failed function or if filename is NULL - -1.
  *         If the file does not exist the user lacks write permissions - -1.
- *         else return - 1.
+ *          return - 1.
  */
-int Append_Text_To_File(const char *filename, char *text_content)
-
+int append_text_fo_file(const char *filename, char *text_content)
 {
 	int NP, GH, GUT = 0;
 
@@ -24,12 +23,12 @@ int Append_Text_To_File(const char *filename, char *text_content)
 	}
 
 	NP = open(filename, O_WRONLY | O_APPEND);
-	GUT = write(NP, text_content, GUT);
+	GH = write(NP, text_content, GUT);
 
-	if (NP == -1 || w == -1)
+	if (NP == -1 || GH == -1)
 		return (-1);
 
 	close(NP);
 
 	return (1);
-}	
+}
